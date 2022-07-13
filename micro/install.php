@@ -17,13 +17,13 @@ define('REPO_TO_INSTALL', [
 try
 {
 	// try download the installer file
-	file_put_contents(__DIR__ . '/installer.php', file_get_contents('http://moorexa.com/raw-installer'));	
+	file_put_contents(__DIR__ . '/installer.php', file_get_contents('https://raw.githubusercontent.com/moorexa/installer/master/installer.php'));	
 
 	// try download the moorexa file
-	file_put_contents(__DIR__ . '/moorexa', file_get_contents('http://moorexa.com/raw-moorexa'));
+	file_put_contents(__DIR__ . '/moorexa', file_get_contents('https://raw.githubusercontent.com/moorexa/installer/master/moorexa'));
 
 	// try download the completeInstallProcess file
-	file_put_contents(__DIR__ . '/completeInstallProcess.php', file_get_contents('http://moorexa.com/raw-install-function'));
+	file_put_contents(__DIR__ . '/completeInstallProcess.php', file_get_contents('https://raw.githubusercontent.com/moorexa/installer/master/completeInstallProcess.php'));
 }
 catch(Throwable $e){}
 
